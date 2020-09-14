@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+* {
+    color: #333;
+    font-family: 'Kufam', sans-serif;
+}
+
+div#header {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+div#cal {
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #ddd;
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+
+div#cal table {
+    width: 350px;
+    height: 500px;
+    text-align: center;
+/*    border-collapse: collapse;*/
+}
+
+div#cal table tr td {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+div#cal table tr:first-child~* td:hover {
+    background-color: #eee;
+}
+
+div#cal table tr:first-child td {
+    height: 90px;
+    position: relative;
+    background-color: cornsilk;
+}
+
+div#cal table tr:first-child td input:first-child {
+    width: 320px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: cornsilk;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+}
+
+div#cal table tr:first-child td input:nth-child(2) {
+    width: 320px;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    outline: none;
+    text-align: right;
+    background-color: cornsilk;
+}
+
+div#cal table tr td.right {
+    background-color: lavenderblush;
+}
+
+div#cal table tr td.right:hover {
+    background-color: lavender;
+}

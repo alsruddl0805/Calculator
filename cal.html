@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="script/script.js"></script>
+</head>
+<body>
+
+    <div id="wrap">
+
+        <div id="header">Calculator</div>
+
+        <div id="cal">
+
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="result">
+                        <input type="text" id="display">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="reset()">AC</td>
+                    <td onclick="remove()"><i class="fas fa-angle-left"></i></td>
+                    <td class="right" onclick="add('/')">/</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="add(7)">7</td>
+                    <td class="num" onclick="add(8)">8</td>
+                    <td class="num" onclick="add(9)">9</td>
+                    <td class="right" onclick="add('*')">*</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="add(4)">4</td>
+                    <td class="num" onclick="add(5)">5</td>
+                    <td class="num" onclick="add(6)">6</td>
+                    <td class="right" onclick="add('-')">-</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="add(1)">1</td>
+                    <td class="num" onclick="add(2)">2</td>
+                    <td class="num" onclick="add(3)">3</td>
+                    <td class="right" onclick="add('+')">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2"onclick="add(0)">0</td>
+                    <td onclick="add('.')">.</td>
+                    <td class="right" onclick="calculate()">=</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
