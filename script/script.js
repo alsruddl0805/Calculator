@@ -5,19 +5,20 @@ var result = document.getElementById("result");
 var numberCheck = false;
 var numZero = true;
 
-function add(char) {
+
+function add(num) {
 // 문자열 방지
     if (numberCheck == false) {
-        if (isNaN(char) == true) {
+        if (isNaN(num) == true) {
 
         } else {
-            document.getElementById("display").value += char;
+            document.getElementById("display").value += num;
         }
     } else {
-        document.getElementById("display").value += char;
+        document.getElementById("display").value += num;
     }
 
-    if (isNaN(char) == true) {
+    if (isNaN(num) == true) {
         numberCheck = false;
     } else {
         numberCheck = true;
@@ -28,8 +29,8 @@ function add(char) {
 
 function calculate() {
     var resultCal = eval(display.value);
-    document.getElementById("result").value = resultCal;
-    document.getElementById("display").value = ""; // 계산 후 식 초기화
+    result.value = resultCal;
+    display.value = resultCal;
 }
 
 // 값 하나씩 지우기
@@ -44,3 +45,12 @@ function reset() {
     document.getElementById("display").value = "";
     document.getElementById("result").value = "";
 }
+
+
+
+
+
+
+
+
+
